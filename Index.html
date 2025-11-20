@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Static Site — <yourusername></title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <h1>Welcome to <span class="username">&lt;yourusername&gt;</span>'s site</h1>
+    <p class="subtitle">Hosted with GitHub Pages</p>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h2>Simple static site</h2>
+      <p>This is a sample static website ready to deploy to GitHub Pages. Edit these files and push to your repository named <code>&lt;yourusername&gt;.github.io</code>.</p>
+      <p><a class="btn" href="#learn">Learn more</a></p>
+    </section>
+
+    <section id="learn" class="card grid">
+      <article>
+        <h3>About</h3>
+        <p>Small demo site for hosting on GitHub Pages. No server required — HTML/CSS/JS only.</p>
+      </article>
+
+      <article>
+        <h3>Contact</h3>
+        <p>Email: <em>yourname@example.com</em> (replace with your own)</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <yourusername> — Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script: set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
